@@ -5,8 +5,8 @@ let Quantité = 2;
 let Frais_de_livraison = 5000;
 let Taux_de_TVA = 18;
 let montant_produits = Prix_unitaire * Quantité;
-let montant_TVA = (montant_produits * Taux_de_TVA);
-let montant_TTC = montant_produits + Taux_de_TVA;
+let montant_TVA = (montant_produits * Taux_de_TVA)/100;
+let montant_TTC = montant_produits + montant_TVA;
 let montant_total = montant_TTC + Frais_de_livraison;
 let prix_moyen_TTC = montant_TTC / Quantité;
 console.log("===== REÇU DE COMMANDE =====")
