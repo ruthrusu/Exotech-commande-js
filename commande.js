@@ -21,3 +21,7 @@ console.log(`Montant TTC : ${montant_TTC} FCFA`);
 console.log(`Livraison : ${Frais_de_livraison} FCFA`);
 console.log(`TOTAL A PAYER : ${montant_total} FCFA`);
 console.log(" ");
+console.log(`Prix moyen TTC par produit : ${prix_moyen_TTC} FCFA`);
+console.log(`Type du nom : ${typeof Nom_du_client}`);
+console.log(`Type du prix : ${typeof Prix_unitaire}`);
+console.log(`Type de la quantité : ${typeof Quantité}`);
