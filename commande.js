@@ -9,3 +9,15 @@ let montant_TVA = (montant_produits * Taux_de_TVA);
 let montant_TTC = montant_produits + Taux_de_TVA;
 let montant_total = montant_TTC + Frais_de_livraison;
 let prix_moyen_TTC = montant_TTC / Quantité;
+console.log("===== REÇU DE COMMANDE =====")
+console.log(`Client : ${Nom_du_client}`);
+console.log(`produit : ${Nom_du_produit}`);
+console.log(`Prix unitaire : ${Prix_unitaire} FCFA`);
+console.log(`Quantité : ${Quantité}`);
+console.log(" ");
+console.log(`Montant des produits : ${montant_produits} FCFA`);
+console.log(`TVA (18%) : ${montant_TVA} FCFA`);
+console.log(`Montant TTC : ${montant_TTC} FCFA`);
+console.log(`Livraison : ${Frais_de_livraison} FCFA`);
+console.log(`TOTAL A PAYER : ${montant_total} FCFA`);
+console.log(" ");
