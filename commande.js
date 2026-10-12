@@ -1,0 +1,27 @@
+const Nom_du_client = "Awa";
+const Nom_du_produit = "Ordinateur";
+let Prix_unitaire = 250000;
+let Quantité = 2;
+let Frais_de_livraison = 5000;
+let Taux_de_TVA = 18;
+let montant_produits = Prix_unitaire * Quantité;
+let montant_TVA = (montant_produits * Taux_de_TVA)/100;
+let montant_TTC = montant_produits + montant_TVA;
+let montant_total = montant_TTC + Frais_de_livraison;
+let prix_moyen_TTC = montant_TTC / Quantité;
+console.log("===== REÇU DE COMMANDE =====")
+console.log(`Client : ${Nom_du_client}`);
+console.log(`produit : ${Nom_du_produit}`);
+console.log(`Prix unitaire : ${Prix_unitaire} FCFA`);
+console.log(`Quantité : ${Quantité}`);
+console.log(" ");
+console.log(`Montant des produits : ${montant_produits} FCFA`);
+console.log(`TVA (18%) : ${montant_TVA} FCFA`);
+console.log(`Montant TTC : ${montant_TTC} FCFA`);
+console.log(`Livraison : ${Frais_de_livraison} FCFA`);
+console.log(`TOTAL A PAYER : ${montant_total} FCFA`);
+console.log(" ");
+console.log(`Prix moyen TTC par produit : ${prix_moyen_TTC} FCFA`);
+console.log(`Type du nom : ${typeof Nom_du_client}`);
+console.log(`Type du prix : ${typeof Prix_unitaire}`);
+console.log(`Type de la quantité : ${typeof Quantité}`);
